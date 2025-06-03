@@ -1,11 +1,22 @@
 let personas = []
-    let eTelefono = document.getElementById("telefono")
-    let vTelefono = eTelefono.value
+    function = validar()
+        let eTelefono = document.getElementById("telefono")
+        let vTelefono = eTelefono.value
+        let eErrorTelefono = document.getElementById("errorTelefono")
+        console.log(eTelefono)
 
+        let eContrasenia = document.getElementById("Contraseña")
+        let vContrasenia = eContrasenia.value
+        let eErrorContrasenia = document.getElementById("errorContraseña")
+        console.log(eContrasenia)
 
-
-
-
+        if(eTelefono.length => 8){
+            alert("Debes ingresar al menos 8 digitos")
+            eErrorTelefono.innerText = ""
+            eErrorTelefono.innerHTML = ""
+    
+        else(eTelefono)
+}
 
 
 
