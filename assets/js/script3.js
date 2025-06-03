@@ -16,7 +16,7 @@ let personas = []
             eErrorTelefono.innerHTML = ""
         }
         else(eTelefono)
-            
+
 
         if(eContrasenia.length > 6){
             alert("Debe ingresar más de 5 caracteres")
@@ -24,6 +24,12 @@ let personas = []
             eErrorContrasenia.innerHTML = ""
         }
         else(eContrasenia)
+
+
+        let pp = push()
+            eTelefono = Telefono,
+            eContrasenia = Contrasenia 
+
 
 }
 
