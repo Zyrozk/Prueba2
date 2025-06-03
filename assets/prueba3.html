@@ -9,17 +9,17 @@
 <body>
 
     <form id="miFormulario">
-         <label for="telefono">Teléfono:</label>
+        <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono">
         <span class="error" id="errorTelefono"></span>
         <br>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password">
-        <span class="error" id="errorPassword"></span>
+        <label for="password">Contrasenia:</label>
+        <input type="password" id="contrasenia" name="contrasenia">
+        <span class="error" id="errorContrasenia"></span>
         <br>
 
-        <button type="button" onclick="validar()" id="btn">Enviar</button>
+        <button type="button" onclick="validar()">Registrar</button>
     </form>
 
     
@@ -35,19 +35,14 @@
 
         </tbody>
     </table>
+<div id="formActualizar" style="display: none;">
     <form>
-        <label>Eliminar:</label>
-        <input type="text" id="eliminar" name="Eliminar">
-        <br>
-
-        <button type="button" onclick="validar()" id="btn">Eliminar</button>
-
-        <label>Actualizar:</label>
-        <input type="text" id="Actualizar" name="Actualizar">
-        <br>
-
-        <button type="button" onclick="validar()" id="btn">Actualizar</button>
+        <label>Telefono:</label><br/>
+        <input type="text" id="telefono1" placeholder="Ingrese el nuevo telefono"/><br/>
+        <label>Contrasenia:</label><br/>
+        <input type="text" id="contrasenia1" placeholder="Ingrese la nueva contraseña"/><br/>      
+        <button type="button" id="btn" onclick="actualizar()">Actualizar</button>
     </form>
-
+</div>
 </body>
 </html>
